@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cartserviceapod
+spec:
+  containers:
+    - image: eskill001/cartserviceimagerepository
+      name: cartserviceimagerepository
+      imagePullPolicy: Always
+      resources: {}
+      ports:
+        - containerPort: 8088

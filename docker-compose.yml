@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  cartservice.api:
+    image: ${DOCKER_REGISTRY-}cartserviceapi
+    build:
+      context: .
+      dockerfile: src/TP.NA.CartService/Dockerfile
+    ports:
+     - 6003:443
+     - 6002:80
